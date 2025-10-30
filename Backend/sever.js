@@ -4,6 +4,7 @@ import "dotenv/config.js"
 import helmet from 'helmet'
 import morgan from 'morgan'
 import connectDB from './db/db.js'
+import routes from './routes/userContact.route.js'
 import compression from 'compression';
 import rateLimit from 'express-rate-limit';
 import cors from 'cors'
@@ -57,7 +58,8 @@ app.get('/health', (req, res) => {
 });
 
 // API routes
-// app.use('/api/not/', routes);
+app.use('/api/w1/', routes);
+
 
 // Simple route for testing
 app.get('/', (req, res) => {
