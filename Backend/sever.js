@@ -8,6 +8,7 @@ import routes from './routes/userContact.route.js'
 import compression from 'compression';
 import rateLimit from 'express-rate-limit';
 import cors from 'cors'
+import { errorHandler, notFound } from './middleware/errorHandler.js'
 
 const app = express();
 
@@ -65,6 +66,13 @@ app.use('/api/w1/', routes);
 app.get('/', (req, res) => {
     res.send('Hello World!');
 });
+
+
+app.use(notFound);
+
+app.use(errorHandler);
+
+
 
 const PORT = process.env.PORT || 3000;
 
