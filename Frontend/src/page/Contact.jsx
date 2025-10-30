@@ -20,8 +20,10 @@ const Contact = () => {
       message: message.value,
     };
 
+    const baseApi = import.meta.env.VITE_API_URI
+
     try {
-      const response = await fetch("http://localhost:3000/api/w1/sendEmail", {
+      const response = await fetch(`${baseApi}/sendEmail`, {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
