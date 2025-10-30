@@ -5,7 +5,7 @@ import { body } from "express-validator";
 const router = Router();
 
 router.post(
-  "/createContact",[
+  "/sendEmail",[
   body("name")
     .isString()
     .isLength({ min: 3 })
