@@ -147,7 +147,7 @@ const Hero = () => {
           </div>
         </div>
         <img
-          className="w-64 h-64 md:w-80 md:h-90 object-cover rounded-2xl dark:shadow-xl  shadow-xs m-8 mb-40 hidden md:block dark:drop-shadow-amber-50  drop-shadow-gray-900 drop-shadow-sm"
+          className="w-64 h-64 md:w-80 md:h-90 object-cover rounded-2xl dark:shadow-xl  shadow-xs m-8 mb-40 hidden md:block dark:drop-shadow-amber-50 drop-shadow-gray-900 drop-shadow-sm"
           // src="https://static.vecteezy.com/system/resources/thumbnails/042/055/246/small_2x/ai-generated-businessman-portrait-portrait-of-businessman-png.png"
           src={profileImage}
           alt="Kamlesh Kumwt Portrait"

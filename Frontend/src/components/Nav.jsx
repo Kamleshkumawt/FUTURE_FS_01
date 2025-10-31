@@ -15,7 +15,49 @@ const Nav = () => {
               href="#"
               className="hover:scale-110 active:scale-95 transition-all duration-200 opacity-70 hover:opacity-100 "
             >
-              Kamlesh
+              <svg
+                width="36"
+                height="36"
+                viewBox="0 0 64 64"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <defs>
+                  <filter
+                    id="glow"
+                    x="-50%"
+                    y="-50%"
+                    width="200%"
+                    height="200%"
+                  >
+                    <feDropShadow
+                      dx="0"
+                      dy="0"
+                      stdDeviation="4"
+                      floodColor="#00ADB5"
+                      floodOpacity="0.8"
+                    />
+                  </filter>
+                </defs>
+
+                <circle
+                  cx="32"
+                  cy="32"
+                  r="28"
+                  filter="url(#glow)"
+                  // stroke="#00ADB5"
+                  //  stroke="hsl(var(--primary))"
+                   className="stroke-[#00ADB5] dark:stroke-[hsl(var(--primary))] transition-colors duration-300"
+                  strokeWidth="4"
+                />
+                <path
+                  d="M32 16V32M24 40C24 35 27 32 32 32C37 32 40 35 40 40C40 45 37 48 32 48C27 48 24 45 24 40Z"
+                  // stroke="#EEEEEE"
+                  strokeWidth="3"
+                  strokeLinecap="round"
+                  className="stroke-gray-900 dark:stroke-gray-100 transition-colors duration-300"
+                />
+              </svg>
             </a>
           </span>
           {/* Hamburger for mobile */}
