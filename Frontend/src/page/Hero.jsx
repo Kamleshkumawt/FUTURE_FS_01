@@ -16,14 +16,46 @@ const Hero = () => {
               alt="Kamlesh Kumwt Portrait"
             />
           </div>
-          <h1 className="text-[#663399] w-full tracking-[8px] text-lg flex sm:text-3xl justify-center sm:justify-start sm:items-start md:text-4xl font-extrabold sm:font-bold mb-2 animate-pulse [text-shadow:0_0_25px_hsl(var(--primary)/0.3)]">
+          <h1 className="text-[#663399] w-full tracking-[8px] text-lg flex sm:text-3xl justify-center sm:justify-start sm:items-start md:text-4xl font-extrabold sm:font-bold my-3 animate-pulse [text-shadow:0_0_25px_hsl(var(--primary)/0.3)]">
             KAMLESH KUMAWAT
           </h1>
-          <h2 className="text-lg w-full sm:text-4xl md:text-6xl flex sm:flex-col justify-center sm:justify-start sm:items-start  gap-2 sm:gap-1 font-bold sm:font-extrabold dark:text-white text-gray-800 mb-3">
-            FULL-STACK <span> WEB DEVELOPER</span>
+          
+          <div className="flex items-center gap-3 mb-3 sm:mb-1">
+            <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            className="lucide lucide-code w-5 h-5 text-[hsl(var(--primary))] sm:hidden flex"
+          >
+            <polyline points="16 18 22 12 16 6"></polyline>
+            <polyline points="8 6 2 12 8 18"></polyline>
+          </svg>
+          <h2 className="text-lg w-full sm:text-4xl md:text-6xl flex sm:flex-col justify-center sm:justify-start sm:items-start  gap-2 sm:gap-1 font-bold sm:font-extrabold sm:dark:text-gray-100 dark:text-gray-400 text-gray-800">
+            FULL - STACK <span> WEB DEVELOPER</span>
           </h2>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            className="lucide lucide-zap w-5 h-5 text-accent text-[hsl(var(--primary))] sm:hidden flex"
+          >
+            <path d="M4 14a1 1 0 0 1-.78-1.63l9.9-10.2a.5.5 0 0 1 .86.46l-1.92 6.02A1 1 0 0 0 13 10h7a1 1 0 0 1 .78 1.63l-9.9 10.2a.5.5 0 0 1-.86-.46l1.92-6.02A1 1 0 0 0 11 14z"></path>
+          </svg>
+          </div>
 
-          <p className="sm:text-lg md:text-xl text-center sm:text-start dark:text-gray-300 text-gray-700 mb-4 max-w-xl">
+          <p className="sm:text-lg md:text-xl text-center sm:text-start dark:text-gray-300 text-gray-700 mb-3 max-w-xl">
             Hi, I'm{" "}
             <span className="font-bold text-[#663399] [text-shadow:0_0_25px_hsl(var(--primary)/0.)]">
               Kamlesh
@@ -63,7 +95,7 @@ const Hero = () => {
             with the community.
           </p>
 
-          <div className="gap-4 w-full flex items-center justify-center md:justify-start mb-4">
+          <div className="gap-4 w-full flex items-center justify-center md:justify-start mb-4 sm:mb-1">
             <a
               href="#Work"
               className="p-4 border  rounded-xl cursor-pointer font-medium bg-[hsl(var(--primary)/0.1)] border-[hsl(var(--primary)/0.3)]  text-[hsl(var(--primary))] transition-transform dark:hover:shadow-[0_0_25px_hsl(var(--primary)/0.5)]"
@@ -77,7 +109,7 @@ const Hero = () => {
               Contact Me
             </a>
           </div>
-          <div className="flex items-center justify-center md:justify-start mt-1 w-full">
+          <div className="flex items-center justify-center md:justify-start mt-3 sm:-mt-1 w-full">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               viewBox="0 0 24 24"
