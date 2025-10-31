@@ -1,6 +1,7 @@
 import { useRef, useState } from "react";
 import Footer from "../components/Footer";
 import toast, { Toaster } from 'react-hot-toast';
+import axios from "../config/axios";
 
 
 const Contact = () => {
@@ -20,29 +21,18 @@ const Contact = () => {
       message: message.value,
     };
 
-    const baseApi = import.meta.env.VITE_API_URI
-
     try {
-      const response = await fetch(`${baseApi}/sendEmail`, {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify(details),
-      });
-      const data = await response.json();
-      if(data.success){
+      const response = await axios.post('/sendEmail', details);
+      if(response.data.success){
         formRef.current.reset();
-        toast.success(data.message)
-        setLoading(false);
-      }
-      if(!data.success){
-        toast.error(data.message);
+        toast.success(response.data.message)
         setLoading(false);
       }
     } catch (error) {
-      console.log('sending email error :',error.message);
+      console.error('sending email error :',error);
       setLoading(false);
+      formRef.current.reset();
+      toast.error(error.response.data.message);
     }
   };
 
@@ -106,7 +96,7 @@ const Contact = () => {
             disabled={loading}
             className="p-3 border-none bg-orange-400 w-full cursor-pointer font-semibold rounded-xl dark:hover:shadow-[0_0_25px_hsl(var(--primary)/0.5)] dark:shadow-[0_0_25px_hsl(var(--primary)/0.3)]"
           >
-            Submit
+            {loading ? "Sending..." : "Submit"}
           </button>
           {/* {error && <span className="text-red-400">Error</span>}
           {succes && <span className="text-green-400">Success</span>} */}

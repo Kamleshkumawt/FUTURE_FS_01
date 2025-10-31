@@ -18,7 +18,7 @@ app.use(compression());
 
 // CORS middleware only allow requests from one origin
 app.use(cors({
-  origin: 'https://kamlesh-personal-site.netlify.app',
+  origin: 'http://localhost:5173',
   credentials: true,
   methods: ['GET', 'POST',],
 }));
