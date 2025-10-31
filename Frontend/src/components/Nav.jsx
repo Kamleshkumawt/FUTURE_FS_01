@@ -13,7 +13,7 @@ const Nav = () => {
           <span className="text-2xl">
             <a
               href="#"
-              className="hover:scale-110 active:scale-95 transition-all duration-200 opacity-70 hover:opacity-100"
+              className="hover:scale-110 active:scale-95 transition-all duration-200 opacity-70 hover:opacity-100 "
             >
               Kamlesh
             </a>
@@ -84,7 +84,7 @@ const Nav = () => {
               <a href="#Contact">Contact</a>
             </li>
           </ul>
-          <div className="fixed top-6 right-4 z-50 flex items-center justify-center">
+          <div className="fixed hidden top-6 right-4 z-50 md:flex items-center justify-center">
             <ThemeToggle />
           </div>
         </div>

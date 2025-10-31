@@ -6,40 +6,82 @@ const Hero = () => {
   return (
     <div className="dark:bg-gradient-to-b from-gray-800 to-gray-900 bg-gray-100 w-full min-h-screen">
       <Nav />
-      <div className="wrapper max-w-7xl mx-auto pt-25 px-4 flex flex-col md:flex-row items-center justify-between">
-        <div className="flex flex-col justify-center items-start gap-8 w-full md:w-2/3">
-          <h1 className="text-[#663399] tracking-[8px] text-3xl sm:text-4xl font-bold mb-2 animate-pulse">
+      <div className="wrapper max-w-7xl mx-auto  text-center sm:text-start pt-25 px-4 flex flex-col md:flex-row items-center w-full justify-between">
+        <div className="flex flex-col justify-center items-start gap-3 sm:gap-8 w-full text-center md:w-2/3">
+          <div className="w-full flex items-center justify-center">
+            <img
+              className="w-30 h-30 object-cover rounded-full dark:shadow-xl  shadow-lg shadow-[hsl(var(--primary)/0.2)] md:hidden block dark:drop-shadow-amber-50  drop-shadow-gray-900 drop-shadow-sm"
+              // src="https://static.vecteezy.com/system/resources/thumbnails/042/055/246/small_2x/ai-generated-businessman-portrait-portrait-of-businessman-png.png"
+              src={profileImage}
+              alt="Kamlesh Kumwt Portrait"
+            />
+          </div>
+          <h1 className="text-[#663399] w-full tracking-[8px] text-lg flex sm:text-3xl justify-center sm:justify-start sm:items-start md:text-4xl font-extrabold sm:font-bold mb-2 animate-pulse [text-shadow:0_0_25px_hsl(var(--primary)/0.3)]">
             KAMLESH KUMAWAT
           </h1>
-          <h2 className="text-4xl sm:text-6xl font-extrabold dark:text-white text-gray-800 mb-4">
-            FULL-STACK <br /> WEB DEVELOPER
+          <h2 className="text-lg w-full sm:text-4xl md:text-6xl flex sm:flex-col justify-center sm:justify-start sm:items-start  gap-2 sm:gap-1 font-bold sm:font-extrabold dark:text-white text-gray-800 mb-3">
+            FULL-STACK <span> WEB DEVELOPER</span>
           </h2>
-          <p className="text-lg sm:text-xl dark:text-gray-300 text-gray-700 mb-6 max-w-xl">
-            Hi, I'm Kamlesh! I craft modern, scalable web applications using the
-            MERN stack and more. With a passion for clean code, and problem
-            solving, I love building products that make a difference. I enjoy
-            collaborating, learning new tech, and sharing knowledge with the
-            community.
+
+          <p className="sm:text-lg md:text-xl text-center sm:text-start dark:text-gray-300 text-gray-700 mb-4 max-w-xl">
+            Hi, I'm{" "}
+            <span className="font-bold text-[#663399] [text-shadow:0_0_25px_hsl(var(--primary)/0.)]">
+              Kamlesh
+            </span>
+            ! I craft
+            <span className="font-semibold [text-shadow:0_0_25px_hsl(var(--primary)/0.3)] mx-1">
+              modern, scalable web applications
+            </span>
+            using the{" "}
+            <span className="font-semibold text-[#a484c4] [text-shadow:0_0_25px_hsl(var(--primary)/0.3)]">
+              MERN stack
+            </span>{" "}
+            and more. With a passion for
+            <span className="font-semibold [text-shadow:0_0_25px_hsl(var(--primary)/0.3)]  mx-1">
+              clean code
+            </span>{" "}
+            and
+            <span className="font-semibold text-[#bf16fdcb]  [text-shadow:0_0_25px_hsl(var(--primary)/0.3)]  mx-1">
+              problem solving
+            </span>
+            , I love building products that
+            <span className="font-semibold text-[#d97affb3]  [text-shadow:0_0_25px_hsl(var(--primary)/0.3)]  mx-1">
+              make a difference
+            </span>
+            . I enjoy
+            <span className="font-semibold [text-shadow:0_0_25px_hsl(var(--primary)/0.3)]  mx-1">
+              collaborating
+            </span>
+            ,
+            <span className="font-semibold [text-shadow:0_0_25px_hsl(var(--primary)/0.3)]  mx-1">
+              learning new tech
+            </span>
+            , and
+            <span className="font-semibold text-[#9c7ba8]  [text-shadow:0_0_25px_hsl(var(--primary)/0.3)]  mx-1">
+              sharing knowledge
+            </span>{" "}
+            with the community.
           </p>
-          <div className="gap-4 mb-6 hidden md:flex">
+
+          <div className="gap-4 w-full flex items-center justify-center md:justify-start mb-4">
             <a
               href="#Work"
-              className="p-4 border border-white rounded-xl cursor-pointer font-medium bg-gradient-to-r from-purple-500 to-indigo-500 text-white hover:scale-105 transition-transform"
+              className="p-4 border  rounded-xl cursor-pointer font-medium bg-[hsl(var(--primary)/0.1)] border-[hsl(var(--primary)/0.3)]  text-[hsl(var(--primary))] transition-transform dark:hover:shadow-[0_0_25px_hsl(var(--primary)/0.5)]"
             >
               See the Latest Works
             </a>
             <a
               href="#Contact"
-              className="p-4 border border-white dark:bg-white bg-gray-400 dark:text-gray-900 text-gray-50 rounded-xl cursor-pointer font-semibold dark:hover:bg-gray-100 hover:scale-105 transition-transform"
+              className="p-4 border border-white dark:bg-white bg-[hsl(var(--primary))] dark:text-gray-900 text-gray-50 rounded-xl cursor-pointer font-semibold dark:hover:bg-gray-100 hover:scale-105 transition-transform dark:hover:shadow-[0_0_25px_hsl(var(--primary)/0.5)] dark:shadow-[0_0_25px_hsl(var(--primary)/0.3)]"
             >
               Contact Me
             </a>
           </div>
-          <div className="flex items-center mt-2">
+          <div className="flex items-center justify-center md:justify-start mt-1 w-full">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               viewBox="0 0 24 24"
-              className="w-8 h-12 text-gray-400 animate-bounce cursor-pointer "
+              className="w-10 h-14 cursor-pointer hover:text-[hsl(var(--primary)/0.5)] transition-colors duration-300 text-[hsl(var(--primary))] hover:animate-pulse animate-bounce [text-shadow:0_0_25px_hsl(var(--primary)/0.3)]"
               fill="none"
               stroke="currentColor"
               strokeWidth={2}
@@ -61,7 +103,7 @@ const Hero = () => {
               <line x1="12" y1="6" x2="12" y2="10" strokeLinecap="round" />
             </svg>
             <span
-              className="text-gray-400 text-base  cursor-pointer dark:hover:text-white hover:text-gray-800 transition -mt-2"
+              className="text-gray-400 text-base sm:flex hidden cursor-pointer dark:hover:text-white hover:text-gray-800 transition -mt-2"
               onClick={() => {
                 const aboutSection = document.getElementById("About");
                 if (aboutSection) {

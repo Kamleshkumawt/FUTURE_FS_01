@@ -6,7 +6,7 @@ export default function ThemeToggle() {
   return (
     <button
       onClick={toggleTheme}
-      className="p-2 rounded-full dark:bg-gray-200 bg-gray-900 text-gray-800 dark:text-gray-200 transition-colors duration-300 hover:scale-110 active:scale-95 cursor-pointer"
+      className="p-2 rounded-full dark:bg-gray-200 bg-[hsl(var(--primary))] text-gray-800 dark:text-gray-200 transition-colors duration-300 hover:scale-110 active:scale-95 cursor-pointer dark:hover:shadow-[0_0_25px_hsl(var(--primary)/0.5)] dark:shadow-[0_0_25px_hsl(var(--primary)/0.3)]"
     >
       {theme === "light" ? (
         <svg

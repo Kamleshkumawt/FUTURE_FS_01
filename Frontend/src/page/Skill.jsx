@@ -64,8 +64,8 @@ const Skill = () => {
       <div
         className="w-full flex flex-col items-start gap-5 mt-8"
       >
-        <h2 className="text-xl sm:text-2xl md:text-3xl font-semibold mb-2 text-start border-l-amber-300 border-l-4 pl-2">
-          My Tech Stack
+        <h2 className="text-xl sm:text-2xl md:text-3xl font-semibold mb-2 text-start border-l-amber-300 border-l-4 pl-2 [text-shadow:0_0_25px_hsl(var(--primary)/0.3)]">
+          My  <span className="text-[hsl(var(--primary))]">Tech Stack</span>
         </h2>
         <div className="flex flex-wrap justify-start gap-2 sm:gap-3 px-2">
           {badgeList.map((badge, idx) => (
@@ -85,40 +85,40 @@ const Skill = () => {
       </div>
        {/* Social Links Section - Fun & Modern UI */}
       <div className="w-full max-w-xl flex flex-col items-start gap-4 mt-5 ">
-        <h2 className="text-lg sm:text-xl md:text-2xl font-bold text-center pl-2 border-l-amber-300 border-l-4 flex items-center gap-2">
-         My Social Links
+        <h2 className="text-lg sm:text-xl md:text-2xl font-bold text-center pl-2 border-l-amber-300 border-l-4 flex items-center gap-2 [text-shadow:0_0_25px_hsl(var(--primary)/0.3)] ">
+         My <span className="text-[hsl(var(--primary))]">Social Links</span>
         </h2>
         <p className="dark:text-gray-300 text-gray-900 text-start text-base sm:text-lg mb-2">
           Let's connect and have some fun! Follow, star, or DM me on your favorite platform. 🚀
         </p>
         <div className="flex gap-8 justify-center dark:text-gray-200 text-gray-900">
-          <a href="https://github.com/Kamleshkumawt" target="_blank" rel="noopener noreferrer" className="group hover:scale-125 transition-transform duration-200">
+          <a href="https://github.com/Kamleshkumawt" target="_blank" rel="noopener noreferrer" className="group hover:scale-110 transition-transform duration-200">
             <div className="flex flex-col items-center">
-              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" alt="GitHub" className="h-12 w-12 rounded-full bg-gray-700 p-2 shadow-lg group-hover:ring-4 group-hover:ring-blue-400" />
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" alt="GitHub" className="h-10 w-10 rounded-full bg-gray-700 p-2 dark:shadow-[0_0_25px_hsl(var(--primary)/0.5)]  " />
               <span className="text-xs  mt-1">GitHub</span>
             </div>
           </a>
-          <a href="https://www.linkedin.com/in/kamlesh-kumawat-598988330/" target="_blank" rel="noopener noreferrer" className="group hover:scale-125 transition-transform duration-200">
+          <a href="https://www.linkedin.com/in/kamlesh-kumawat-598988330/" target="_blank" rel="noopener noreferrer" className="group hover:scale-110 transition-transform duration-200">
             <div className="flex flex-col items-center">
-              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linkedin/linkedin-original.svg" alt="LinkedIn" className="h-12 w-12 rounded-full bg-blue-700 p-2 shadow-lg group-hover:ring-4 group-hover:ring-blue-400" />
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linkedin/linkedin-original.svg" alt="LinkedIn" className="h-10 w-10 rounded-full bg-blue-700 p-2 dark:shadow-[0_0_25px_hsl(var(--primary)/0.5)]  " />
               <span className="text-xs mt-1">LinkedIn</span>
             </div>
           </a>
-          <a href="https://twitter.com/yourusername" target="_blank" rel="noopener noreferrer" className="group hover:scale-125 transition-transform duration-200">
+          <a href="https://twitter.com/yourusername" target="_blank" rel="noopener noreferrer" className="group hover:scale-110 transition-transform duration-200">
             <div className="flex flex-col items-center">
-              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/twitter/twitter-original.svg" alt="Twitter" className="h-12 w-12 rounded-full bg-blue-400 p-2 shadow-lg group-hover:ring-4 group-hover:ring-blue-400" />
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/twitter/twitter-original.svg" alt="Twitter" className="h-10 w-10 rounded-full bg-blue-400 p-2 dark:shadow-[0_0_25px_hsl(var(--primary)/0.5)]   " />
               <span className="text-xs mt-1">Twitter</span>
             </div>
           </a>
-          <a href="mailto:kamleshkumwt12th@gmail.com" className="group hover:scale-125 transition-transform duration-200">
+          <a href="mailto:kamleshkumwt12th@gmail.com" className="group hover:scale-110 transition-transform duration-200">
             <div className="flex flex-col items-center">
-              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/google/google-original.svg" alt="Email" className="h-12 w-12 rounded-full bg-red-500 p-2 shadow-lg group-hover:ring-4 group-hover:ring-blue-400" />
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/google/google-original.svg" alt="Email" className="h-10 w-10 rounded-full bg-red-500 p-2 dark:shadow-[0_0_25px_hsl(var(--primary)/0.5)]   " />
               <span className="text-xs mt-1">Email</span>
             </div>
           </a>
-          <a href="https://www.instagram.com/kamleshkumawat68" target="_blank" rel="noopener noreferrer" className="group hover:scale-125 transition-transform duration-200">
+          <a href="https://www.instagram.com/kamleshkumawat68" target="_blank" rel="noopener noreferrer" className="group hover:scale-110 transition-transform duration-200">
             <div className="flex flex-col items-center">
-              <img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png" alt="Instagram" className="h-12 w-12 rounded-full bg-pink-500 p-2 shadow-lg group-hover:ring-4 group-hover:ring-blue-400" />
+              <img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png" alt="Instagram" className="h-10 w-10 rounded-full bg-pink-500 p-2 dark:shadow-[0_0_25px_hsl(var(--primary)/0.5)] " />
               <span className="text-xs mt-1">Instagram</span>
             </div>
           </a>

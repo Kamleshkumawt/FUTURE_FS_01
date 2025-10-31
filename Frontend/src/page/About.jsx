@@ -1,14 +1,16 @@
 
+
 const About = () => {
   return (
     <div
-      className="h-full max-w-full flex flex-col gap-5 items-start justify-center px-2 py-8 md:px-8 md:py-6 bg-gray-100 dark:bg-gradient-to-b from-gray-800 to-gray-900  dark:text-white text-gray-900"
+      className=" h-full max-w-full flex flex-col gap-5 items-start justify-center px-2 py-8 md:px-8 md:py-6 bg-gray-100 dark:bg-gradient-to-b from-gray-800 to-gray-900  dark:text-white text-gray-900"
     >
+      
       <h1
-        className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold mb-1 mt-10  text-center border-l-amber-300 border-l-4 pl-2"  
+        className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold mb-1 mt-10  text-center border-l-amber-300 border-l-4 pl-2 [text-shadow:0_0_25px_hsl(var(--primary)/0.3)]"  
         // bg-gradient-to-r from-green-400 via-blue-500 to-purple-600 bg-clip-text text-transparent
       >
-        About Me
+        About <span className="text-[hsl(var(--primary))]"> Me</span>
       </h1>
       <p
         className="max-w-md sm:max-w-xl md:max-w-7xl text-sm sm:text-lg md:text-xl font-medium dark:text-gray-100 text-gray-900 text-start leading-relaxed px-2"
@@ -63,6 +65,7 @@ const About = () => {
           MySQL | MongoDB | Data Structures | Problem Solver
         </div>
       </div> */}
+      
     </div>
   );
 };

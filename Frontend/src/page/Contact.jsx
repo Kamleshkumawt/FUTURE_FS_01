@@ -104,7 +104,7 @@ const Contact = () => {
             type="submit"
             value="send"
             disabled={loading}
-            className="p-3 border-none bg-orange-400 w-full cursor-pointer font-semibold rounded-xl"
+            className="p-3 border-none bg-orange-400 w-full cursor-pointer font-semibold rounded-xl dark:hover:shadow-[0_0_25px_hsl(var(--primary)/0.5)] dark:shadow-[0_0_25px_hsl(var(--primary)/0.3)]"
           >
             Submit
           </button>
