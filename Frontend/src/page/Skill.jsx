@@ -64,7 +64,7 @@ const Skill = () => {
       <div
         className="w-full flex flex-col items-start gap-5 mt-8"
       >
-        <h2 className="text-xl sm:text-2xl md:text-3xl font-semibold mb-2 text-start border-l-amber-300 border-l-4 pl-2 [text-shadow:0_0_25px_hsl(var(--primary)/0.3)]">
+        <h2 className="text-xl sm:text-2xl md:text-3xl font-semibold mb-2 text-start border-l-[hsl(var(--primary))] border-l-4 pl-2 [text-shadow:0_0_25px_hsl(var(--primary)/0.3)]">
           My  <span className="text-[hsl(var(--primary))]">Tech Stack</span>
         </h2>
         <div className="flex flex-wrap justify-start gap-2 sm:gap-3 px-2">
@@ -85,7 +85,7 @@ const Skill = () => {
       </div>
        {/* Social Links Section - Fun & Modern UI */}
       <div className="w-full max-w-xl flex flex-col items-start gap-4 mt-5 ">
-        <h2 className="text-lg sm:text-xl md:text-2xl font-bold text-center pl-2 border-l-amber-300 border-l-4 flex items-center gap-2 [text-shadow:0_0_25px_hsl(var(--primary)/0.3)] ">
+        <h2 className="text-lg sm:text-xl md:text-2xl font-bold text-center pl-2 border-l-[hsl(var(--primary))] border-l-4 flex items-center gap-2 [text-shadow:0_0_25px_hsl(var(--primary)/0.3)] ">
          My <span className="text-[hsl(var(--primary))]">Social Links</span>
         </h2>
         <p className="dark:text-gray-300 text-gray-900 text-start text-base sm:text-lg mb-2">

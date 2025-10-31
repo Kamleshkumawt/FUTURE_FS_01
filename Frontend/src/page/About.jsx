@@ -7,7 +7,7 @@ const About = () => {
     >
       
       <h1
-        className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold mb-1 mt-10  text-center border-l-amber-300 border-l-4 pl-2 [text-shadow:0_0_25px_hsl(var(--primary)/0.3)]"  
+        className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold mb-1 mt-10  text-center border-l-[hsl(var(--primary))] border-l-4 pl-2 [text-shadow:0_0_25px_hsl(var(--primary)/0.3)]"  
         // bg-gradient-to-r from-green-400 via-blue-500 to-purple-600 bg-clip-text text-transparent
       >
         About <span className="text-[hsl(var(--primary))]"> Me</span>
